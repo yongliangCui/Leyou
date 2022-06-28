@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: upfile-service
+  servlet:
+    multipart:
+      max-file-size: 5MB
+  datasource:
+    url: jdbc:mysql://124.222.59.109:3306/Leyou?characterEncoding=utf-8
+    username: root
+    password: 19961220
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
